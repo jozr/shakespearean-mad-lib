@@ -16,7 +16,8 @@ public class Prose {
         String location = console.readLine("Specific location:  ");
         String bodyPart = console.readLine("Body part:  ");
         String adjective = console.readLine("Adjective:  ");
-        String name = console.readLine("Name:  ");
+        String nameInput = console.readLine("Name:  ");
+        String name = nameInput.substring(0, 1).toUpperCase() + nameInput.substring(1);
         String nameTwo;
         boolean isInvalidWord;
         do {
