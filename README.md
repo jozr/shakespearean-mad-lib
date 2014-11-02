@@ -5,10 +5,10 @@ This Java program executes simple input-output methods. The prose is an excerpt 
 
 First, make sure you have Java installed on your system:
 
-		java -version
+	$ java -version
 
 Then compile the code and run it:
 
-		javac Story.java
-		java Story
+	$ javac Story.java
+	$ java Story
 
