@@ -17,17 +17,26 @@ public class Story {
         String bodyPart = console.readLine("Body part:  ");
         String adjective = console.readLine("Adjective:  ");
         String name = console.readLine("Name:  ");
-        String nameTwo = console.readLine("Male name: ");
-        if (nameTwo.equals(name)) {
-            console.printf("You already used that name. Exiting... \n\n");
-            System.exit(0);
-        }
+        String nameTwo;
+        boolean isInvalidWord;
+        do {
+            nameTwo = console.readLine("Male name: ");
+            isInvalidWord = (nameTwo.equalsIgnoreCase(name));
+            if (isInvalidWord) {
+                console.printf("You already used that name. Try again. \n\n");
+            }
+        } while(isInvalidWord);
         String verb = console.readLine("Verb:  ");
-        String nameThree = console.readLine("Another name:  ");
-        if (nameThree.equals(name) || nameThree.equals(nameTwo)) {
-            console.printf("You already used that name. Exiting... \n\n");
-            System.exit(0);
-        }
+        String nameThree;
+        boolean isAnotherInvalidWord;
+        do {
+            nameThree = console.readLine("Another name:  ");
+            isAnotherInvalidWord = (nameThree.equalsIgnoreCase(name) ||
+                                    nameThree.equalsIgnoreCase(nameTwo));
+            if (isAnotherInvalidWord) {
+                console.printf("You already used that name. Try again. \n\n");
+            }
+        } while(isAnotherInvalidWord);
         String pluralNoun = console.readLine("Plural noun:  ");
         String relative = console.readLine("Relative i.e., 'sister':  ");
 
