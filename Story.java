@@ -18,8 +18,16 @@ public class Story {
         String adjective = console.readLine("Adjective:  ");
         String name = console.readLine("Name:  ");
         String nameTwo = console.readLine("Male name: ");
+        if (nameTwo.equals(name)) {
+            console.printf("You already used that name. Exiting... \n\n");
+            System.exit(0);
+        }
         String verb = console.readLine("Verb:  ");
         String nameThree = console.readLine("Another name:  ");
+        if (nameThree.equals(name) || nameThree.equals(nameTwo)) {
+            console.printf("You already used that name. Exiting... \n\n");
+            System.exit(0);
+        }
         String pluralNoun = console.readLine("Plural noun:  ");
         String relative = console.readLine("Relative i.e., 'sister':  ");
 
