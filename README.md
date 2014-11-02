@@ -9,6 +9,6 @@ First, make sure you have Java installed on your system:
 
 Then compile the code and run it:
 
-	$ javac Story.java
-	$ java Story
+	$ javac Prose.java
+	$ java Prose
 

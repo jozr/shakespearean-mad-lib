@@ -1,6 +1,6 @@
 import java.io.Console;
  
-public class Story {
+public class Prose {
     
     public static void main(String[] args) {
         Console console = System.console();
